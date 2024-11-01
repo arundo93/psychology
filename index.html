@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Опора - психологический центр</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">Logo</div>
+            <div class="logo"><img src="./assets/icon.svg"></div>
             <nav class="nav">
-                <div><a href="#specialists">Специалисты</a></div>
+                <div><a href="#">Главная</a></div>
+                <div><a href="./specialists/specialists.html">Специалисты</a></div>
+                <div><a href="#specialists">Услуги и цены</a></div>
                 <div><a href="#appointment">Запись на прием</a></div>
                 <div><a href="#appointment">Отзывы</a></div>
-                <div><a href="#contact">Контакты</a></div>
+                <div><a href="#contacts">Контакты</a></div>
             </nav>
             <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#2f8f2f" stroke-width="2" viewBox="0 0 24 24">
@@ -29,12 +32,12 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <defs>
                     <linearGradient id="waveGradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#e0f7e0;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#f0f8f0;stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:#eeedeb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#eeedeb;stop-opacity:1" />
                     </linearGradient>
                     <linearGradient id="waveGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#b0e0b0;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#d0f0d0;stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:#ddc2a5;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ddc2a5;stop-opacity:1" />
                     </linearGradient>
                 </defs>
                 <path fill="url(#waveGradientLight)" d="M0,128L30,144C60,160,120,192,180,202.7C240,213,300,203,360,186.7C420,171,480,149,540,128C600,107,660,85,720,90.7C780,96,840,128,900,133.3C960,139,1020,117,1080,106.7C1140,96,1200,96,1260,101.3C1320,107,1380,117,1410,122.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
@@ -43,25 +46,81 @@
         </div>
         <div class="hero-title">
             <h1>Психологический центр Опора</h1>
-            <p>Ваш путь к гармонии</p>
+            <div>Ничто не заменит человеческого общения</div>
+            <div class="hero-contacts"><span>м. Беляево</span><span>+7 (996) 675-58-75</span><span>+7 (996) 675-58-78</span></div>
         </div>
     </div>
     
 
-    <section class="about">
-        <h2>О нас</h2>
-        <p>Наша команда профессиональных психологов предлагает широкий спектр услуг для поддержки вашего психического здоровья. Мы создаем безопасное пространство для ваших переживаний и помогаем преодолеть трудные моменты.</p>
+    <section>
+        <div class="specialist-about">
+            <h2>О нас</h2>
+            <p>
+                В мире современных технологий и неудержимого прогресса, в котором виртуальное
+                захватывает новые и новые сферы жизни, человек все больше нуждается во
+                взаимопонимании, живом общении, когда можно слышать и видеть собеседника,
+                радоваться блеску его глаз, улыбкам, его живому участию в диалоге, чувствовать
+                душевное тепло и непосредственность!
+            </p>
+            <p style="text-align: center;">
+                Именно поэтому основной принцип нашей работы –
+                НИЧТО НЕ ЗАМЕНИТ ЛИЧНОГО ОБЩЕНИЯ!
+            </p>
+            <p>
+                Приглашаем на консультации в наш уютный кабинет, где вас встретит опытный
+                психолог – консультант, в диалоге с которым найдутся решения ваших проблем!
+            </p>
+            <p>Дистанционные консультации также в сфере наших услуг.</p>
+            <p>
+                ПСИХОЛОГИЧЕСКОЕ КОНСУЛЬТИРОВАНИЕ - это
+                не врачебная профессиональная помощь, оказываемая психологом - консультантом
+                человеку, оказавшемуся в трудных жизненных обстоятельствах, столкнувшемуся с разного
+                рода проблемами и сложностями, мешающими ему жить радостно и спокойно, работать,
+                общаться, с оптимизмом смотреть в завтрашний день.
+            </p>
+            <p>К таким проблемам и трудностям относятся:</p>
+            <ul>
+                <li>удручающие психологические состояния</li>
+                <li>проблемы в отношениях с окружающими</li>
+                <li>работа со старшими подростками</li>
+            </ul>
+            <p>
+                Работа с психологом – консультантом – это совместные усилия, сотрудничество двоих -
+                специалиста, обладающего необходимыми знаниями, опытом и человека, оказавшегося в
+                трудной ситуации. Это сотрудничество должно строиться на четком понимании его целей
+                и задач, взаимном уважение, доверии друг к другу. Очень важно, чтобы с помощью
+                психолога человек смог правильно оценить перспективы и возможные последствия
+                решений, которые ему предстоит принять на этом пути, и чтобы он был готов отвечать за
+                свой выбор.
+            </p>
+            <p>
+                Что можно ожидать от работы с психологом – консультантом? Ответ во многом зависит
+                от запроса, проблемы, с которой человек пришел на консультацию. Не стоит ожидать
+                мгновенных результатов – психологи совсем не волшебники! Мировая практика
+                показывает, что для их достижения требуется сессия из нескольких консультаций,
+                результатом которых станет улучшение качества жизни, гармоничное принятие себя и
+                окружающего мира, душевное равновесие.
+            </p>
+            <p>
+                Проблемы, которые сегодня не дают вам жить спокойно и счастливо, лишь тусклые, темные
+                стеклышки в яркой красивой мозаике, которая называется ЖИЗНЬ. Мы готовы помочь Вам,
+                чтобы душевное равновесие и счастье вернулись в вашу жизнь.
+            </p>
+            <p>
+                Не терпите, не откладывайте визит к психологу на потом. Найдем решение и начнем действовать.
+            </p>
+        </div>
     </section>
 
     <section class="specialists" id="specialists">
         <h2>Наши специалисты</h2>
         <div class="carousel">
             <div class="card">
-                <img src="assets/p1.jpg" alt="Анна Ванюшина">
+                <img src="assets/p1.jpg" alt="Юлия Якубовская">
                 <div class="card-content">
-                    <h3>Анна Ванюшина</h3>
-                    <p>Специалист по когнитивно-поведенческой терапии, психологическому консультированию и психодиагностике</p>
-                    <div>Подробнее</div>
+                    <h3>Юлия Якубовская</h3>
+                    <p>Аналитический психолог</p>
+                    <div><a href="./specialists/specialist.html">Подробнее</a></div>
                     <button>Запись на прием</button>
                 </div>
             </div>
@@ -75,16 +134,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="assets/p3.jpg" alt="Наталья Большакова">
-                <div class="card-content">
-                    <h3>Наталья Большакова</h3>
-                    <p>Практический психолог, член Ассоциации Ориентированных на Решение Психотерапевтов и Практиков</p>
-                    <div>Подробнее</div>
-                    <button>Запись на прием</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/p4.jpg" alt="Саида Хишба">
+                <img src="assets/p3.jpg" alt="Саида Хишба">
                 <div class="card-content">
                     <h3>Саида Хишба</h3>
                     <p>Специалист в когнитивно-поведенческом подходе, член Ассоциации когнитивнно-поведенческой психологии</p>
@@ -93,25 +143,43 @@
                 </div>
             </div>
             <div class="card">
-                <img src="assets/p5.jpg" alt="Таисия Ерофеева">
+                <img src="assets/p4.jpg" alt="Евгений Лыков">
+                <div class="card-content">
+                    <h3>Евгений Лыков</h3>
+                    <p>Специалист по ранзактному анализу, когнитивно-поведенческой терапии и EDMR</p>
+                    <div>Подробнее</div>
+                    <button>Запись на прием</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/p5.jpg" alt="Наталья Большакова">
+                <div class="card-content">
+                    <h3>Наталья Большакова</h3>
+                    <p>Практический психолог, член Ассоциации Ориентированных на Решение Психотерапевтов и Практиков</p>
+                    <div>Подробнее</div>
+                    <button>Запись на прием</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/p6.jpg" alt="Таисия Ерофеева">
                 <div class="card-content">
                     <h3>Таисия Ерофеева</h3>
-                    <p>Символ-драма, нейромоделирование, арт-терапия, метафорические ассоциативные карты (МАК) Опыт консультативной работы 6 лет</p>
+                    <p>Символ-драма, нейромоделирование, арт-терапия, метафорические ассоциативные карты</p>
                     <div>Подробнее</div>
                     <button>Запись на прием</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/p6.jpg" alt="Юлия Якубовская">
+                <img src="assets/p7.jpg" alt="Анна Ванюшина">
                 <div class="card-content">
-                    <h3>Юлия Якубовская</h3>
-                    <p>Аналитический психолог</p>
+                    <h3>Анна Ванюшина</h3>
+                    <p>Специалист по когнитивно-поведенческой терапии, психологическому консультированию и психодиагностике</p>
                     <div>Подробнее</div>
                     <button>Запись на прием</button>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/p7.jpg" alt="Оксана Басанцева">
+                <img src="assets/p8.jpg" alt="Оксана Басанцева">
                 <div class="card-content">
                     <h3>Оксана Басанцева</h3>
                     <p>Психолог-консультант, психотерапевт</p>
@@ -120,7 +188,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="assets/p8.jpg" alt="Мария Ряховская">
+                <img src="assets/p9.jpg" alt="Мария Ряховская">
                 <div class="card-content">
                     <h3>Мария Ряховская</h3>
                     <p>Специалист по вопросам детско-родительских отношений, профориентации</p>
@@ -172,9 +240,9 @@
         </div>
     </section>
 
-    <section class="appointment" id="appointment">
-        <div class="appointment-content">
-            <p>Остались вопросы?</p>
+    <section>
+        <div class="specialist-about">
+            <div class="appointment-content">Остались вопросы?</div>
             <div class="appointment-buttons">
                 <button>Записаться на консультацию</button>
                 <button>Задать вопрос</button>
@@ -187,19 +255,21 @@
             <div class="footer__column-title">Центр Опора</div>
             <div class="footer__column-item">Главная</div>
             <div class="footer__column-item">Специалисты</div>
+            <div class="footer__column-item">Услуги и цены</div>
             <div class="footer__column-item">Запись на прием</div>
             <div class="footer__column-item">Отзывы</div>
         </div>
         <div class="footer__column">
             <div class="footer__column-title">Контакты</div>
-            <div class="footer__column-item">Email: info@psychologysite.ru</div>
-            <div class="footer__column-item">Телефон: +7 (123) 456-78-90</div>
-            <div class="footer__column-item">г. Москва, ул. Хлебопекарная, 38</div>
+            <div class="footer__column-item">Email: opora.psy@yandex.ru</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-75</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-78</div>
+            <div class="footer__column-item">г. Москва, ул. Профсоюзная, д. 4, этаж 3</div>
             <div class="footer__column-item">
                 <div class="socials">
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">VK</a>
+                    <a href="#">
+                        <img src="./assets/tg.svg" alt="Telegram">
+                    </a>
                 </div>
             </div>
         </div>

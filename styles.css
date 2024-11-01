@@ -4,7 +4,24 @@
     box-sizing: border-box;
 }
 
+/*
+Порядок+
+Цвета+
+Кнопка услуги+
+Телефоны к заголовку+
+Слоган+
+О нас из файла наши услуги+
+Добавить образование к АВ-
+*/
+
+/* #36552b - Mughal Green
+#7a9880 - Amulet
+#ddc2a5 - Cashmere
+#ad9992 - Del Rio
+#eeedeb - белый */
+
 body {
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: white;
     color: #333;
@@ -16,17 +33,24 @@ body {
     --padding-out: 40px;
     --padding-in: 20px;
     --padding-between: 10px;
+    --c1: #36552b;
+    --c2: #7a9880;
+    --c3: #ddc2a5;
+    --c4: #ad9992;
+    --c5: #eeedeb;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 var(--padding-out);
-    background-color: #f0f8f0;
+.old{
+    --old-c1: #f0f8f0;
+    --old-c2: #2f8f2f;
+    --old-c3: #333;
+    --old-c4: #e0f7e0;
+    --old-c5: #b0e0b0;
 }
 
 h2 {
+    text-align: left;
+    margin-bottom: var(--padding-in);
     font-size: var(--font-h2-size);
 }
 
@@ -34,22 +58,42 @@ h3 {
     font-size: var(--font-h3-size);
 }
 
-.header-container{
+/*Header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--padding-out);
+    background-color: var(--c3);
+}
+
+.header-container {
     position: relative;
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    height: calc(var(--font-card-size) + var(--padding-in));
+}
+
+.logo img {
+    height: 100%;
 }
 
 .nav {
     display: flex;
     gap: var(--padding-in);
+    font-size: var(--font-card-size);
 }
 
 .nav div{
@@ -62,7 +106,7 @@ h3 {
 
 .nav a{
     text-decoration: none;
-    color: #2f8f2f;
+    color: var(--c1);
 }
 
 .nav.active {
@@ -71,7 +115,7 @@ h3 {
     z-index: 2;
     padding: var(--padding-between);
     display: flex;
-    background-color: #f0f8f0;
+    background-color: var(--c3);
     border-radius: 20px;
     flex-direction: column;
     align-items: center;
@@ -84,10 +128,13 @@ h3 {
     display: none; /* Скрыть на больших экранах */
 }
 
+
+/*Header*/
+/*Hero image*/
+
 .hero {
     position: relative;
     text-align: center;
-    color: white;
     overflow: hidden; /* Скрыть выходящие части */
     height: 50vh; /* Высота блока по высоте экрана */
 }
@@ -106,24 +153,35 @@ h3 {
 
 .hero-title {
     position: absolute;
-    padding: var(--padding-out);
-    width: 100%;
-    height: 100%;
     box-sizing: border-box;
     display: flex;
     gap: 40px;
     flex-direction: column;
-    justify-content: center;
-    color: #2f8f2f;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: var(--padding-out);
+    color: var(--c1);
+}
+
+.hero-title h1 {
     font-size: var(--font-h1-size);
 }
 
-.hero-title p{
-    width: 100%;
-    max-width: 1200px;
+.hero-title div {
+    align-self: end;
     text-align: right;
     font-size: var(--font-h2-size);
 }
+
+.hero-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Hero image*/
+/*Text blocks*/
 
 section {
     display: flex;
@@ -132,20 +190,33 @@ section {
     padding: var(--padding-out);
 }
 
-.specialists {
-    background-color: #f0f8f0;
-}
-
-.appointment-content{
+section > * {
     width: 100%;
     max-width: 1200px;
-    padding: var(--padding-out);
-    box-sizing: border-box;
-    background-color: #f0f8f0;
-    border-radius: 20px;
 }
 
-.appointment-content p{
+.specialist-about {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-between);
+    padding: var(--padding-in);
+    border-radius: var(--padding-in);
+    background-color: var(--c3);
+    font-size: var(--font-card-size);
+}
+
+.specialist-about ul {
+    padding-left: var(--padding-in);
+}
+
+.specialist-about li {
+    padding: var(--padding-between);
+}
+
+/*Text blocks*/
+/*Appointment*/
+
+.appointment-content{
     text-align: center;
     padding: var(--padding-in) 0;
 }
@@ -157,11 +228,26 @@ section {
     flex-wrap: wrap;
 }
 
-h2{
-    width: 100%;
-    max-width: 1200px;
-    text-align: left;
-    margin-bottom: var(--padding-in);
+/*Appointment*/
+/*Carousel*/
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--padding-in);
+    scroll-behavior: smooth;
+    padding: var(--padding-between);
+}
+
+.carousel::-webkit-scrollbar{
+    height: 6px;
+}
+.carousel::-webkit-scrollbar-button{
+    display: none;
+}
+.carousel::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: var(--c2);
 }
 
 .card {
@@ -170,7 +256,7 @@ h2{
     display: flex;
     flex-direction: column;
     margin: var(--padding-between);
-    background-color: #e0f7e0;
+    background-color: var(--c3);
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -194,7 +280,9 @@ h2{
     text-align: center;
 }
 
-.card div div{
+.card div div, .card a{
+    color: unset;
+    text-decoration: none;
     font-size: var(--font-desc-size);
 }
 
@@ -203,35 +291,11 @@ h2{
     margin-top: auto;
 }
 
-p{
-    width: 100%;
-    max-width: 1200px;
-}
-
-.carousel {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    overflow-x: auto;
-    gap: var(--padding-in);
-    scroll-behavior: smooth;
-    padding: var(--padding-between);
-}
-
-.carousel::-webkit-scrollbar{
-    height: 6px;
-}
-.carousel::-webkit-scrollbar-button{
-    display: none;
-}
-.carousel::-webkit-scrollbar-thumb{
-    border-radius: 3px;
-    background-color: #2f8f2f;
-}
+/*Carousel*/
 
 button {
     padding: var(--padding-between) var(--padding-in);
-    background-color: #2f8f2f;
+    background-color: var(--c1);
     color: white;
     border: none;
     border-radius: var(--padding-in);
@@ -239,8 +303,10 @@ button {
 }
 
 button:hover {
-    background-color: #228b22;
+    background-color: var(--c2);
 }
+
+/*Footer*/
 
 footer {
     padding: var(--padding-in) var(--padding-out);
@@ -263,22 +329,29 @@ footer {
     padding: 5px 10px;
 }
 
-.footer__column div:hover{
-    color: #2f8f2f;
-    cursor: pointer;
-}
-
 .footer__column-title{
     border-bottom: 1px solid #f0f8f0;
     font-size: var(--font-card-size);
     font-weight: bold;
 }
 
-.socials a {
-    margin: 0 var(--padding-between);
-    text-decoration: none;
-    color: #2f8f2f;
+.footer__column-item:hover{
+    color: var(--c1);
+    cursor: pointer;
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.socials a, .socials img {
+    height: 100%;
+}
+
+/*Footer*/
 
 @media (max-width: 740px) {
     .nav {
@@ -302,5 +375,15 @@ footer {
 
     .card {
         min-width: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        gap: var(--padding-between);
+    }
+
+    .nav div {
+        padding: var(--padding-in) var(--padding-between);
     }
 }
