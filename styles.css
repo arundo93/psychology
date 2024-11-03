@@ -113,8 +113,13 @@ header {
     color: var(--c1);
 }
 
+.nav-close {
+    display: none;
+}
+
 .nav.active {
     position: absolute;
+    top: 0;
     right: 64px;
     z-index: 2;
     padding: var(--padding-between);
@@ -124,6 +129,10 @@ header {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav.active .nav-close {
+    display: block;
 }
 
 .menu-icon {
@@ -418,6 +427,7 @@ button:hover {
 .services__accordion-button {
     transition: all .3s;
     padding: var(--padding-in) var(--padding-in) var(--padding-in) 55px;
+    cursor: pointer;
 }
 
 .services__accordion-button::before {
@@ -744,6 +754,28 @@ footer {
 
     .card {
         min-width: 150px;
+    }
+
+    .services__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services__item-cell {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: var(--padding-in);
+    }
+
+    .services__cell-name {
+        display: block;
+    }
+
+    .appointment-blank {
+        height: 80vh;
+        width: 100%;
+        border-radius: var(--padding-out) var(--padding-out) 0 0;
+        margin-top: 20vh;
     }
 }
 
