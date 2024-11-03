@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги психологического центра Опора</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src="assets/icon.svg"></div>
+            <nav class="nav">
+                <div><a href="index.html">Главная</a></div>
+                <div><a href="about.html">О нас</a></div>
+                <div><a href="specialists.html">Специалисты</a></div>
+                <div><a href="services.html">Услуги и цены</a></div>
+                <div onclick="toggleAppointment()"><a href="#">Запись на прием</a></div>
+                <div><a href="reviews.html">Отзывы</a></div>
+                <div><a href="#contacts">Контакты</a></div>
+            </nav>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#2f8f2f" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>Услуги</h2>
+        <div class="section-text">
+            <h3>Психологическое консультирование - это</h3>
+            <p>
+                неврачебная профессиональная помощь, оказываемая психологом - консультантом человеку, 
+                оказавшемуся в трудных  жизненных обстоятельствах, столкнувшемуся с разного рода проблемами и сложностями, 
+                мешающими ему жить радостно и спокойно, работать, общаться, с оптимизмом смотреть в завтрашний день.
+            </p>
+            <p>
+                К таким проблемам и трудностям относятся:
+            </p>
+        </div>
+        <div class="accordion-container">
+            <div class="services__accordion">
+                <div class="services__accordion-button">
+                    Личностные проблемы
+                </div>
+                <div class="services__accordion-content accordion-collapse">
+                    <div class="accordion-list">
+                        <div>повышенная тревожность</div>
+                        <div>депрессия</div>
+                        <div>панические атаки</div>
+                        <div>психосоматика</div>
+                        <div>притупленное восприятие действительности, апатия</div>
+                        <div>недовольство собой, внутренние конфликты</div>
+                        <div>повышенная тревожность, страхи</div>
+                        <div>неуверенность в себе, низкая самооценка </div>
+                        <div>страх перед новыми начинаниями</div>
+                        <div>избегание ответственности</div>
+                        <div>чрезмерная самокритика,  сравнение себя с другими</div>
+                        <div>неумение отстаивать свои интересы</div>
+                        <div>перфекционизм</div>
+                        <div>социальная тревога</div>
+                        <div>эмоциональная нестабильность</div>
+                        <div>выгорание, прокрастинация</div>
+                        <div>проблемы с мотивацией</div>
+                        <div>невозможность достичь профессионального успеха</div>
+                        <div>профориентация, помощь в подборе ВУЗа или колледжа</div>
+                        <div>определение стратегии подготовки подростков к выпускным экзаменам</div>
+                        <div>психологическая поддержка подростков</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__accordion">
+                <div class="services__accordion-button">
+                    Проблемы в отношениях с окружающими
+                </div>
+                <div class="services__accordion-content accordion-collapse">
+                    <div class="accordion-list">
+                        <div>одиночество, проблемы в создании пары</div>
+                        <div>разрыв отношений, развод</div>
+                        <div>проблемы в паре (конфликты, измены, недоверие…)</div>
+                        <div>проблемы во взаимоотношениях поколений в семье,</div>
+                        <div>зависимость от других</div>
+                        <div>чрезмерная чувствительность к мнениям окружающих («меня никто не любит», «я всем мешаю», «я никому не нужна / не нужен»…)</div>
+                        <div>трудности в отношениях с партнёром, начальником</div>
+                        <div>эмоциональная поддержка в карьере, поиск и понимание сложностей продвижения по карьерной лестнице</div>
+                        <div>детско-родительские отношения</div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__accordion">
+                <div class="services__accordion-button">
+                    Кризисные ситуации
+                </div>
+                <div class="services__accordion-content accordion-collapse">
+                    <div class="accordion-list">
+                        <div>повторяющиеся сложные жизненные ситуации</div>
+                        <div>горе и утрата</div>
+                        <div>посттравматическое стрессовое расстройство</div>
+                        <div>чувство вины, тяжелые переживания о прошлом</div>
+                        <div>утрата смысла жизни</div>
+                        <div>возрастные кризисы</div>
+                        <div>потеря работы, социального статуса</div>
+                        <div>самоповреждение</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Цены</h2>
+        <div class="services-container">
+            <div class="services__item">
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Название услуги</div>
+                    <div class="services__cell-text">Диагностический сеанс 55 минут</div>
+                </div>
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Цена</div>
+                    <div class="services__cell-text">7 000 &#x20BD;</div>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Название услуги</div>
+                    <div class="services__cell-text">Онлайн консультация 55 минут</div>
+                </div>
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Цена</div>
+                    <div class="services__cell-text">7 000 &#x20BD;</div>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Название услуги</div>
+                    <div class="services__cell-text">Офлайн консультация 55 минут</div>
+                </div>
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Цена</div>
+                    <div class="services__cell-text">7 000 &#x20BD;</div>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Название услуги</div>
+                    <div class="services__cell-text">Индивидуальный комплекс 5 сеансов</div>
+                </div>
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Цена</div>
+                    <div class="services__cell-text">35 000 &#x20BD;</div>
+                </div>
+                <div class="services__item-cell description">
+                    <div class="services__cell-name">Описание</div>
+                    <div class="services__cell-text">
+                        В рамках пакетного предложения диагностический сеанс со скидкой
+                    </div>
+                </div>
+            </div>
+            <div class="services__item">
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Название услуги</div>
+                    <div class="services__cell-text">Ежедневное сопровождение (1 неделя)</div>
+                </div>
+                <div class="services__item-cell">
+                    <div class="services__cell-name">Цена</div>
+                    <div class="services__cell-text">42 000 &#x20BD;</div>
+                </div>
+                <div class="services__item-cell description">
+                    <div class="services__cell-name">Описание</div>
+                    <div class="services__cell-text">
+                        В течение недели ежедневно три дистанционные консультации 
+                        по 20 мин каждая с 09:30 до 21:30. За 20 мин до каждого сеанса 
+                        необходимо согласовать его время с консультантом
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-text">
+            <div class="section-text-title">Остались вопросы?</div>
+            <div class="section-buttons">
+                <button onclick="toggleAppointment()">Записаться на консультацию</button>
+                <button>Задать вопрос</button>
+            </div>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="footer__column">
+            <div class="footer__column-title">Центр Опора</div>
+            <div class="footer__column-item">Главная</div>
+            <div class="footer__column-item">Специалисты</div>
+            <div class="footer__column-item">Услуги и цены</div>
+            <div class="footer__column-item" onclick="toggleAppointment()">Запись на прием</div>
+            <div class="footer__column-item">Отзывы</div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__column-title">Контакты</div>
+            <div class="footer__column-item">Email: opora.psy@yandex.ru</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-75</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-78</div>
+            <div class="footer__column-item">г. Москва, ул. Профсоюзная, д. 4, этаж 3</div>
+            <div class="footer__column-item">
+                <div class="socials">
+                    <a href="#">
+                        <img src="assets/tg.svg" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="appointment-container">
+        <div class="appointment-blank">
+            <div class="appointment-close" onclick="toggleAppointment()">
+                <img src="assets/close.svg">
+            </div>
+            <div class="appointment-title">Запись на прием</div>
+            <div class="appointment__input">
+                <div class="appointment__input-list">
+                    <div class="list-head">
+                        Выбрать специалиста
+                        <img src="assets/arrow-bottom.svg">
+                    </div>
+                    <div class="list-item">Специалист 1</div>
+                    <div class="list-item">Специалист 2</div>
+                    <div class="list-item">Специалист 3</div>
+                    <div class="list-item">Специалист 4</div>
+                    <div class="list-item">Специалист 5</div>
+                </div>
+            </div>
+            <div class="appointment__input">
+                <div class="appointment__input-select">
+                    <div class="select-button">
+                        <img src="assets/arrow-left.svg">
+                    </div>
+                    <div class="select-value">15 октября 2024</div>
+                    <div class="select-button">
+                        <img src="assets/arrow-right.svg">
+                    </div>
+                </div>
+                <div class="appointment__input-calendar">
+                    <div class="calendar-time">11:00</div>
+                    <div class="calendar-time">12:00</div>
+                    <div class="calendar-time">13:00</div>
+                    <div class="calendar-time">14:00</div>
+                    <div class="calendar-time">15:00</div>
+                </div>
+            </div>
+            <div class="appointment-controls">
+                <button>Записаться</button>
+                <button class="cancel">Отменить запись</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

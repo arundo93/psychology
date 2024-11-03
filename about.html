@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - психологический центр Опора</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src="assets/icon.svg"></div>
+            <nav class="nav">
+                <div><a href="index.html">Главная</a></div>
+                <div><a href="about.html">О нас</a></div>
+                <div><a href="specialists.html">Специалисты</a></div>
+                <div><a href="services.html">Услуги и цены</a></div>
+                <div onclick="toggleAppointment()"><a href="#">Запись на прием</a></div>
+                <div><a href="reviews.html">Отзывы</a></div>
+                <div><a href="#contacts">Контакты</a></div>
+            </nav>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#2f8f2f" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>О нас</h2>
+        <div class="section-text">
+            <h2>Работа с психологом – консультантом – это</h2>
+            <p>
+                Совместные усилия, сотрудничество двоих - специалиста, 
+                обладающего необходимыми знаниями, опытом и человека, оказавшегося в трудной ситуации. 
+                Это сотрудничество должно строиться на четком понимании его целей и задач, взаимном уважение, 
+                доверии друг к другу. Очень важно, чтобы с помощью психолога человек смог правильно 
+                оценить перспективы и возможные последствия решений, которые ему предстоит принять на этом пути, 
+                и чтобы он был готов отвечать за свой выбор.
+            </p>
+        </div>
+        <div class="section-text">
+            <h2>Что можно ожидать от работы с психологом – консультантом?</h2>
+            <p>
+                Ответ во многом зависит от запроса, 
+                проблемы, с которой человек пришел на консультацию. Не стоит ожидать мгновенных результатов – психологи 
+                совсем не волшебники! Мировая практика показывает, что для их достижения требуется сессия из нескольких 
+                консультаций, результатом которых станет улучшение качества жизни, гармоничное  принятие себя и окружающего мира, душевное равновесие. 
+            </p>
+            <p>
+                Проблемы, которые сегодня не дают вам жить спокойно и счастливо, лишь тусклые, темные стеклышки в яркой красивой мозаике, 
+                которая называется ЖИЗНЬ. Мы готовы помочь Вам, чтобы душевное равновесие и счастье вернулись в вашу жизнь.
+            </p>
+        </div>
+        <div class="section-text">
+            <h2>Не откладывайте визит к психологу на потом. Найдем решение и вместе начнем действовать!</h2>
+        </div>
+        <div class="section-text">
+            <h2>Главные принципы нашей работы:</h3>
+            <h3>1. Профссионализм и компетентоность</h3>
+            <p>
+                Наши сотрудники имеют высокий уровень профессиональной подготовки, опыт работы не менее трех лет в сфере 
+                психологического консультирования, пополняют знания, проходя обучение на специализированных курсах, вебинарах, семинарах.
+            </p>
+            <h3>2. Уважение, внимательность, терпение, эмпатия</h3>
+            <p>
+                качества, которыми в обязательном порядке обладают сотрудники нашей компании. Мы не даем оценок нашим клиентам и ситуациям, 
+                в которых они оказались, не навязываем свои взгляды и ценности, но стараемся быть максимально эффективными, как специалисты, комфортными в общении, и доброжелательными.
+            </p>
+            <h3>3. Доверие, открытость, честность, прямота</h3>
+            <p>
+                качества, которыми обладают не только профессиональные психологи – консультанты. 
+                Эти же качества мы ждем от тех, кто обращается к нам за помощью и поддержкой. 
+                Только в этом случае наше с вами сотрудничество может быть максимально эффективным и принесет желаемые результаты.
+            </p>
+            <h3>4. Конфиденциальность</h3>
+            <p>
+                Мы гарантируем абсолютную конфиденциальность вашего общения с психологом – консультантом. 
+                Это относится к любой информации, которой вы поделились с нами в процессе совместной работы. 
+                Исключением могут быть случаи, когда полученная от Вам информация может быть прямо или косвенно связана с угрозой вашей жизни и жизни третьих лиц.
+            </p>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="footer__column">
+            <div class="footer__column-title">Центр Опора</div>
+            <div class="footer__column-item">Главная</div>
+            <div class="footer__column-item">Специалисты</div>
+            <div class="footer__column-item">Услуги и цены</div>
+            <div class="footer__column-item" onclick="toggleAppointment()">Запись на прием</div>
+            <div class="footer__column-item">Отзывы</div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__column-title">Контакты</div>
+            <div class="footer__column-item">Email: opora.psy@yandex.ru</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-75</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-78</div>
+            <div class="footer__column-item">г. Москва, ул. Профсоюзная, д. 4, этаж 3</div>
+            <div class="footer__column-item">
+                <div class="socials">
+                    <a href="#">
+                        <img src="assets/tg.svg" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="appointment-container">
+        <div class="appointment-blank">
+            <div class="appointment-close" onclick="toggleAppointment()">
+                <img src="assets/close.svg">
+            </div>
+            <div class="appointment-title">Запись на прием</div>
+            <div class="appointment__input">
+                <div class="appointment__input-list">
+                    <div class="list-head">
+                        Выбрать специалиста
+                        <img src="assets/arrow-bottom.svg">
+                    </div>
+                    <div class="list-item">Специалист 1</div>
+                    <div class="list-item">Специалист 2</div>
+                    <div class="list-item">Специалист 3</div>
+                    <div class="list-item">Специалист 4</div>
+                    <div class="list-item">Специалист 5</div>
+                </div>
+            </div>
+            <div class="appointment__input">
+                <div class="appointment__input-select">
+                    <div class="select-button">
+                        <img src="assets/arrow-left.svg">
+                    </div>
+                    <div class="select-value">15 октября 2024</div>
+                    <div class="select-button">
+                        <img src="assets/arrow-right.svg">
+                    </div>
+                </div>
+                <div class="appointment__input-calendar">
+                    <div class="calendar-time">11:00</div>
+                    <div class="calendar-time">12:00</div>
+                    <div class="calendar-time">13:00</div>
+                    <div class="calendar-time">14:00</div>
+                    <div class="calendar-time">15:00</div>
+                </div>
+            </div>
+            <div class="appointment-controls">
+                <button>Записаться</button>
+                <button class="cancel">Отменить запись</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

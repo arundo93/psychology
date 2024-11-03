@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлия Якубовская - специалист психологического центра Опора</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo"><img src="assets/icon.svg"></div>
+            <nav class="nav">
+                <div><a href="index.html">Главная</a></div>
+                <div><a href="about.html">О нас</a></div>
+                <div><a href="specialists.html">Специалисты</a></div>
+                <div><a href="services.html">Услуги и цены</a></div>
+                <div onclick="toggleAppointment()"><a href="#">Запись на прием</a></div>
+                <div><a href="reviews.html">Отзывы</a></div>
+                <div><a href="#contacts">Контакты</a></div>
+            </nav>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#2f8f2f" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M3 6h18M3 12h18M3 18h18"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section id="specialist-info">
+        <div class="specialist">
+            <div class="specialist__title">
+                <img src="assets/p1.jpg" alt="Специалист">
+                <div class="specialist__title-info">
+                    <div class="specialist__title-name">Юлия Якубовская</div>
+                    <div class="specialist__title-main">Аналитический психолог<br>Стаж работы: более 15 лет</div>
+                    <button onclick="toggleAppointment()">Запись на прием</button>
+                </div>
+            </div>
+            <div class="specialist-about">
+                <h3>О себе</h3>
+                <p>Образование: Высшая школа психологии (институт) при Институте Психологии (РАН)</p>
+                <p>Прошла профессиональную переподготовку в российских программах дополнительного образования 
+                    «Юнгианская психотерапия», «Телесные симптомы и психосоматические расстройства в клинической практике», 
+                    «Глубинная психология. Арт-терапевтический подход», а также международной программе «Sandplay Therahy», 
+                    «Психиатрия для психологов», «Теория и практика детского психоанализа и аналитической терапии», 
+                    «Детско-подростковая психиатрия».</p>
+                <p>Профессиональный психолог, квалифицированный специалист в области аналитической 
+                    психологии, детского психоанализа, песочной терапии, арт-терапии. </p>
+                <p>Имею большой опыт работы со взрослыми, а также детьми и подростками 
+                    в государственных и негосударственных организациях.</p>
+                <p>Участвую в конференциях, супервизиях, непрерывно повышаю свою квалификацию, 
+                    обучаюсь у отечественных и зарубежных коллег.</p>
+            </div>
+            <div class="specialist-about">
+                <h3>Какие проблемы я решаю:</h3>
+                <ul>
+                    <li>трудности в отношениях с детьми, партнёром, начальником</li>
+                    <li>самоповреждение</li>
+                    <li>психосоматика</li>
+                    <li>расстройство пищевого поведения</li>
+                    <li>эмоциональная поддержка в карьере, поиск и понимание сложностей продвижения по карьерной лестнице</li>
+                    <li>детско-родительские отношения</li>
+                    <li>создание семьи</li>
+                    <li>низкая мотивация</li>
+                    <li>неуверенность в себе</li>
+                    <li>депрессия</li>
+                    <li>одиночество</li>
+                </ul>
+                <button onclick="toggleAppointment()">Запись на прием</button>
+            </div>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="footer__column">
+            <div class="footer__column-title">Центр Опора</div>
+            <div class="footer__column-item">Главная</div>
+            <div class="footer__column-item">Специалисты</div>
+            <div class="footer__column-item">Услуги и цены</div>
+            <div class="footer__column-item" onclick="toggleAppointment()">Запись на прием</div>
+            <div class="footer__column-item">Отзывы</div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__column-title">Контакты</div>
+            <div class="footer__column-item">Email: opora.psy@yandex.ru</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-75</div>
+            <div class="footer__column-item">Телефон: +7 (996) 675-58-78</div>
+            <div class="footer__column-item">г. Москва, ул. Профсоюзная, д. 4, этаж 3</div>
+            <div class="footer__column-item">
+                <div class="socials">
+                    <a href="#">
+                        <img src="assets/tg.svg" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="appointment-container">
+        <div class="appointment-blank">
+            <div class="appointment-close" onclick="toggleAppointment()">
+                <img src="assets/close.svg">
+            </div>
+            <div class="appointment-title">Запись на прием</div>
+            <div class="appointment__input">
+                <div class="appointment__input-list">
+                    <div class="list-head">
+                        Выбрать специалиста
+                        <img src="assets/arrow-bottom.svg">
+                    </div>
+                    <div class="list-item">Специалист 1</div>
+                    <div class="list-item">Специалист 2</div>
+                    <div class="list-item">Специалист 3</div>
+                    <div class="list-item">Специалист 4</div>
+                    <div class="list-item">Специалист 5</div>
+                </div>
+            </div>
+            <div class="appointment__input">
+                <div class="appointment__input-select">
+                    <div class="select-button">
+                        <img src="assets/arrow-left.svg">
+                    </div>
+                    <div class="select-value">15 октября 2024</div>
+                    <div class="select-button">
+                        <img src="assets/arrow-right.svg">
+                    </div>
+                </div>
+                <div class="appointment__input-calendar">
+                    <div class="calendar-time">11:00</div>
+                    <div class="calendar-time">12:00</div>
+                    <div class="calendar-time">13:00</div>
+                    <div class="calendar-time">14:00</div>
+                    <div class="calendar-time">15:00</div>
+                </div>
+            </div>
+            <div class="appointment-controls">
+                <button>Записаться</button>
+                <button class="cancel">Отменить запись</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
