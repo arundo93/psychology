@@ -1,0 +1,1 @@
+import{c as o,j as s,A as t}from"./index-CeW6bzqI.js";import{H as e,A as r,M as a,a as m}from"./mainPage-B4zEwvrL.js";import"./specialistsList-QYCHL17D.js";o(document.getElementById("root")).render(s.jsxs(t,{children:[s.jsx(e,{}),s.jsx(r,{}),s.jsx(a,{}),s.jsx(m,{})]}));
