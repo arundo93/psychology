@@ -1,1 +1,0 @@
-import{c as o,j as s,A as t}from"./index-CAdufQ-H.js";import{H as e,A as r,M as a,a as m}from"./mainPage-SP7-Wq8a.js";import"./specialistsList-zngE_4qo.js";o(document.getElementById("root")).render(s.jsxs(t,{children:[s.jsx(e,{}),s.jsx(r,{}),s.jsx(a,{}),s.jsx(m,{})]}));
